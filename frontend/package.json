@@ -1,0 +1,9 @@
+{
+  "name":"hcis-frontend",
+  "private":true,
+  "version":"0.2.0",
+  "type":"module",
+  "scripts":{"dev":"vite","build":"tsc && vite build","tauri":"tauri"},
+  "dependencies":{"@vitejs/plugin-react":"latest","vite":"latest","typescript":"latest","react":"latest","react-dom":"latest"},
+  "devDependencies":{"@tauri-apps/cli":"^2"}
+}

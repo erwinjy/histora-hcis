@@ -1,0 +1,65 @@
+{
+  "lock_version": "2.0",
+  "locked_files": [
+    {
+      "path": "backend/hcis/core/enums.py",
+      "sha256": "44e3c87ad8045b1919e313d11b6a3d627a63e00fde7cd45fa47c55a39283bffd"
+    },
+    {
+      "path": "backend/hcis/domain/models.py",
+      "sha256": "80aa55e8764f136974b0c3d99362bb4ff3d83f277244cd6798102ba92df67ede"
+    },
+    {
+      "path": "backend/hcis/domain/contracts.py",
+      "sha256": "486d0e88b99cf37cc8847c74c537a3cf9578151cb3d0077fadf5493ac622f46c"
+    },
+    {
+      "path": "backend/hcis/adapters/contracts.py",
+      "sha256": "86e1ce2f727f2486c4fea09615d9afd91f5498035c4daed47ce9f079d24fb3de"
+    },
+    {
+      "path": "backend/hcis/model_control/contracts.py",
+      "sha256": "f406ac63bc4a0ddf51f45ed2601b9dd826da965a7f40527ce3e72f950c50800e"
+    },
+    {
+      "path": "backend/hcis/acquisition/contracts.py",
+      "sha256": "9ce4c9cfe8026071eadb0c7fd0346dd4a8db7b731cefe535e9b8a7f09aa2d19b"
+    },
+    {
+      "path": "backend/hcis/storage/contracts.py",
+      "sha256": "f2d80207439b68880a09e7e360c34a056acd539a3497d427f76ba0d9e407c3e3"
+    },
+    {
+      "path": "backend/hcis/api/contracts.py",
+      "sha256": "31ed392eb7a433e5cdd59be6ffe4b01cdda5ba582e4e7490bce8b86771230691"
+    },
+    {
+      "path": "backend/hcis/repositories/contracts.py",
+      "sha256": "4ad0bec295d608b719c492db28f912efbc7a75da031f5500a64d2d2b95185f77"
+    },
+    {
+      "path": "backend/hcis/workers/job_state.py",
+      "sha256": "29054bde0e5c8fd35f1d3845911a77d757949da538f92df75bc6b240f8e1b7aa"
+    },
+    {
+      "path": "backend/tests/acceptance/test_claim_fact_separation.py",
+      "sha256": "b2c6272683a7c40842e39d400d481f5d4f497240fe428a6ec5f0d331e881818e"
+    },
+    {
+      "path": "backend/tests/acceptance/test_model_privacy.py",
+      "sha256": "03466171cbedc9acd395a50411148108b0cdcfb67e8641ad13fc5b5cbc9ccd02"
+    },
+    {
+      "path": "backend/tests/acceptance/test_source_genealogy_schema.py",
+      "sha256": "ad43248f202e99b97cd82b107aa09f7800ec79f3c92b3a28779216d895b9fc16"
+    },
+    {
+      "path": "backend/tests/acceptance/test_structured_observation.py",
+      "sha256": "5a85fb3bbc74281ac4340f7318d40e5de52d0edfda84260a935bb25e198b245c"
+    },
+    {
+      "path": "backend/tests/acceptance/test_architecture_freeze_objects.py",
+      "sha256": "ff22dfd29572de8e094f45f58784fa92234b3c5f3800ee30a75920558ae4f3a6"
+    }
+  ]
+}

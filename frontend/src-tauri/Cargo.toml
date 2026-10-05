@@ -1,0 +1,6 @@
+[package]
+name="hcis"
+version="0.2.0"
+edition="2021"
+[dependencies]
+tauri={version="2",features=[]}

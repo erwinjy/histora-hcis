@@ -1,0 +1,94 @@
+你现在执行 **HCIS RC0 Code-Locked Bootstrap v2.0**。
+
+这不是一个让你重新设计 HCIS 的任务。
+
+你的职责是：
+**在既有 Code-Locked 工程骨架中完成实现。**
+
+## 1. 先执行
+
+```bash
+python scripts/verify_code_lock.py
+python scripts/verify_bootstrap.py
+```
+
+两者必须 PASS 后才能开发。
+
+## 2. 强制阅读
+
+1. README.md
+2. CODE_LOCK_POLICY.md
+3. `spec/HCIS_RC0_FINAL_ARCHITECTURE_FREEZE_BUNDLE_v1.7.zip`
+4. backend/hcis/domain/models.py
+5. backend/hcis/domain/contracts.py
+6. backend/hcis/adapters/contracts.py
+7. backend/hcis/model_control/contracts.py
+8. backend/hcis/acquisition/contracts.py
+9. backend/hcis/storage/contracts.py
+10. backend/tests/acceptance/
+
+## 3. HARD LOCK
+
+未经明确批准，不得：
+- 改已有核心表名
+- 合并 Claim 与 FactCandidate
+- 删除 SourceRelation / TextualVariant / Observation
+- 改 Adapter 的公开方法
+- 改 Privacy hard rule
+- 删除 Acceptance Tests
+- 删除 Final P0 objects
+- 把 Vector DB 变成 Truth Store
+- 把 Source Vault 变成可修改目录
+
+如果真实实现证明锁定 Contract 无法满足需求：
+只创建 `CONTRACT_CHANGE_PROPOSAL.md`，
+不得先改代码再解释。
+
+## 4. 主要实现区
+
+优先补齐：
+- MinerU/PaddleOCR/DeezyMatch/T-Res/MapReader concrete adapters
+- Entity MERGE/SPLIT/RELINK/RECALCULATE
+- Claim extraction / Evidence / Conflict
+- CSV/XLSX Observation pipeline
+- Historical Calendar
+- Metrology/Currency
+- Philology/TextLayer
+- Research Question/Hypothesis
+- Coverage
+- Golden Regression
+- ResearchRun
+- Source Acquisition connectors
+- Model Control UI/routing
+- Storage relocation
+- frontend pages and interactions
+
+## 5. 实现后
+
+必须执行：
+- Code Lock verification
+- Unit tests
+- Integration tests
+- Acceptance tests
+- Adversarial tests
+- v1.7 真实史料 HARD GATE
+- AUDITOR ROLE clean-worktree review
+
+任何 FAIL：
+→ IMPLEMENTER 修
+→ clean audit
+
+直到真正 SELF_AUDIT=PASS。
+
+## 6. 禁止行为
+
+禁止为了“快”：
+- 重写架构
+- 把 TODO 直接标 completed
+- 用 fixture 伪装 real corpus
+- 云模型绕过 LOCAL_ONLY
+- 删除 provenance/uncertainty
+- 覆盖原始 Source
+- 静默修改 locked contract
+
+最终必须交付可运行工程、测试证据与真实运行报告。

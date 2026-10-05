@@ -1,0 +1,6 @@
+body{font-family:system-ui;margin:0;background:#f7f8fa;color:#111}
+.shell{display:grid;grid-template-columns:220px 1fr;min-height:100vh}
+nav{padding:20px;border-right:1px solid #ddd;background:#fff}
+main{padding:28px}
+button{padding:10px 14px}
+.card{background:white;border:1px solid #ddd;border-radius:12px;padding:18px;margin-bottom:16px}
